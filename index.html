@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Drop Bot</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="user-info" class="section">
+            <h2>Информация о пользователе</h2>
+            <div id="user-balance">Баланс: <span id="stars">0</span> ⭐</div>
+        </div>
+
+        <div id="cases" class="section">
+            <h2>Доступные кейсы</h2>
+            <div id="cases-container"></div>
+        </div>
+
+        <div id="roulette" class="section hidden">
+            <h2>Рулетка подарков</h2>
+            <div id="roulette-container">
+                <div id="roulette-items"></div>
+            </div>
+            <button id="spin-button" class="button">Крутить (50 ⭐)</button>
+        </div>
+
+        <div id="result" class="section hidden">
+            <h2>Результат</h2>
+            <div id="gift-result"></div>
+            <div id="action-buttons">
+                <button id="sell-button" class="button">Продать</button>
+                <button id="keep-button" class="button">Оставить себе</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
